@@ -6,6 +6,10 @@ Company: GTRONICK
 Last updated: 04/12/2018, 15:00.
 Available at: https://github.com/GTRONICK/QSS/blob/master/MaterialDark.qss
 */
+QWidget {
+	background-color:#1e1d23;
+	color: #a9b7c6;
+}
 QMainWindow {
 	background-color:#1e1d23;
 }
@@ -123,6 +127,16 @@ QLineEdit {
 	selection-background-color:#007b50;
 	selection-color: #FFFFFF;
 }
+QLineEdit:read-only {
+	border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: #808086;
+	background:#1e1d23;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF;
+}
 QLabel {
 	color: #a9b7c6;
 }
@@ -167,7 +181,7 @@ QMenu::item:selected {
 	padding-left:15px;
 	padding-top:4px;
 	padding-bottom:4px;
-	padding-right:7px;
+	padding-right:15px;
 	background-color: #1e1d23;
 }
 QMenu::item {
@@ -182,7 +196,22 @@ QMenu::item {
 	padding-left:17px;
 	padding-top:4px;
 	padding-bottom:4px;
-	padding-right:7px;
+	padding-right:15px;
+	background-color: #1e1d23;
+}
+QMenu::item:disabled {
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-bottom-width: 1px;
+	border-style: solid;
+	color: #808086;
+	padding-left:17px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-right:15px;
 	background-color: #1e1d23;
 }
 QMenu{
@@ -324,6 +353,10 @@ QComboBox:editable {
 	color: #a9b7c6;
 	selection-background-color: #1e1d23;
 }
+QComboBox:disabled {
+	color: #808086;	
+	background: #1e1d23;
+}
 QComboBox QAbstractItemView {
 	color: #a9b7c6;	
 	background: #1e1d23;
@@ -387,4 +420,7 @@ QSlider::sub-page:horizontal {
 }
 QSlider::sub-page:vertical {
     background: #04b97f;
+}
+QHexEdit {
+	background: none;
 }

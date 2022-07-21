@@ -45,3 +45,9 @@ QPushButton:pressed{
 	color: #d3dae3;
 	padding: 2px;
 }
+QLineEdit {
+	color: #000000;
+}
+QLineEdit:read-only {
+	color: #808086;
+}

@@ -5,6 +5,10 @@ Company: GTRONICK
 Last updated: 25/02/2020, 15:42.
 Available at: https://github.com/GTRONICK/QSS/blob/master/ManjaroMix.qss
 */
+QWidget {
+	color: #d3dae3;
+	background-color:#151a1e;
+}
 QMainWindow {
 	background-color:#151a1e;
 }
@@ -116,6 +120,13 @@ QLineEdit {
 	background-color: #222b2e;
 	color: #d3dae3;
 }
+QLineEdit:read-only {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+	background-color: #222b2e;
+	color: #808086;
+}
 QLabel {
 	color: #d3dae3;
 }
@@ -157,6 +168,10 @@ QMenu::item:selected {
 }
 QMenu::item {
 	color: #d3dae3;
+	background-color: #151a1e;
+}
+QMenu::item:disabled {
+	color: #808086;
 	background-color: #151a1e;
 }
 QTabWidget {
@@ -355,7 +370,13 @@ QComboBox {
 	border-style: solid;
 	border-color: #4fa08b;
 }
-
+QComboBox:disabled {
+	color: #808086;
+	background-color: #222b2e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+}
 QDial {
 	background: #16a085;
 }
@@ -528,4 +549,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
 }
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
    background: none;
+}
+QHexEdit {
+	background: none;
 }

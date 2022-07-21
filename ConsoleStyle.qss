@@ -123,7 +123,40 @@ QLineEdit {
 	border-style: inset;
 	padding: 0 8px;
 	color: rgb(255, 255, 255);
-	background:rgb(101, 101, 101);
+	background:rgb(55, 55, 55);
+	selection-background-color: rgb(187, 187, 187);
+	selection-color: rgb(60, 63, 65);
+}
+
+QLineEdit:read-only {
+	border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: #808086;
+	background:rgb(55, 55, 55);
+	selection-background-color: rgb(187, 187, 187);
+	selection-color: rgb(60, 63, 65);
+}
+
+QComboBox {
+	border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: rgb(255, 255, 255);
+	background:rgb(55, 55, 55);
+	selection-background-color: rgb(187, 187, 187);
+	selection-color: rgb(60, 63, 65);
+}
+
+QComboBox:disabled {
+	border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: #808086;
+	background:rgb(55, 55, 55);
 	selection-background-color: rgb(187, 187, 187);
 	selection-color: rgb(60, 63, 65);
 }
@@ -178,4 +211,14 @@ QMenu::item:selected {
 	border-radius: 10px;
 	border-color: rgb(58, 58, 58);
 	border-style: inset;
+}
+
+QMenu::item:disabled {
+	spacing: 3px; 
+	padding: 3px 15px;
+	color: #808086;
+}
+
+QHexEdit {
+	background: none;
 }

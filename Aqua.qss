@@ -13,6 +13,11 @@ QTextEdit {
 	border-style: solid;
 	border-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(0, 113, 255, 255), stop:1 rgba(91, 171, 252, 255));
 }
+QTreeView {
+	border-width: 1px;
+	border-style: solid;
+	border-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(0, 113, 255, 255), stop:1 rgba(91, 171, 252, 255));
+}
 QPlainTextEdit {
 	border-width: 1px;
 	border-style: solid;
@@ -115,9 +120,22 @@ QPushButton:disabled{
 	background-color: rgb(142,142,142);
 }
 QLineEdit {
+	color: #000000;
 	border-width: 1px; border-radius: 4px;
 	border-style: solid;
 	border-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(0, 113, 255, 255), stop:1 rgba(91, 171, 252, 255));
+}
+QLineEdit:read-only {
+	color: #808086;
+	border-width: 1px; border-radius: 4px;
+	border-style: solid;
+	border-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(0, 113, 255, 255), stop:1 rgba(91, 171, 252, 255));
+}
+QComboBox {
+	color: #000000;
+}
+QComboBox:disabled {
+	color: #808086;	
 }
 QLabel {
 	color: #000000;
@@ -163,7 +181,7 @@ QMenu::item:selected {
 	padding-left:15px;
 	padding-top:4px;
 	padding-bottom:4px;
-	padding-right:7px;
+	padding-right:15px;
 }
 QMenu::item {
 	border-style: solid;
@@ -173,10 +191,23 @@ QMenu::item {
 	border-bottom-color: transparent;
 	border-bottom-width: 1px;
 	color: #000000;
-	padding-left:17px;
+	padding-left:15px;
 	padding-top:4px;
 	padding-bottom:4px;
-	padding-right:7px;
+	padding-right:15px;
+}
+QMenu::item:disabled {
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-bottom-width: 1px;
+	color: #808086;
+	padding-left:15px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-right:15px;
 }
 QTabWidget {
 	color:rgb(0,0,0);

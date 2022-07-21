@@ -5,6 +5,10 @@ Company: GTRONICK
 Last updated: 01/10/2021, 15:49.
 Available at: https://github.com/GTRONICK/QSS/blob/master/AMOLED.qss
 */
+QWidget {
+	color:#a9b7c6;
+	background-color:#000000;
+}
 QMainWindow {
 	background-color:#000000;
 }
@@ -15,6 +19,10 @@ QColorDialog {
 	background-color:#000000;
 }
 QTextEdit {
+	background-color:#000000;
+	color: #a9b7c6;
+}
+QTreeView {
 	background-color:#000000;
 	color: #a9b7c6;
 }
@@ -48,7 +56,7 @@ QPushButton:hover{
 	border-left-color: transparent;
 	border-bottom-color: #FF00FF;
 	border-bottom-width: 1px;
-	border-bottom-radius: 6px;
+	border-radius: 6px;
 	border-style: solid;
 	color: #FFFFFF;
 	padding-bottom: 2px;
@@ -61,7 +69,7 @@ QPushButton:pressed{
 	border-left-color: transparent;
 	border-bottom-color: #FF00FF;
 	border-bottom-width: 2px;
-	border-bottom-radius: 6px;
+	border-radius: 6px;
 	border-style: solid;
 	color: #e67e22;
 	padding-bottom: 1px;
@@ -74,7 +82,7 @@ QPushButton:disabled{
 	border-left-color: transparent;
 	border-bottom-color: transparent;
 	border-bottom-width: 2px;
-	border-bottom-radius: 6px;
+	border-radius: 6px;
 	border-style: solid;
 	color: #808086;
 	padding-bottom: 1px;
@@ -99,7 +107,7 @@ QToolButton:hover{
 	border-left-color: transparent;
 	border-bottom-color: #e67e22;
 	border-bottom-width: 2px;
-	border-bottom-radius: 6px;
+	border-radius: 6px;
 	border-style: solid;
 	color: #FFFFFF;
 	padding-bottom: 1px;
@@ -111,6 +119,16 @@ QLineEdit {
 	border-style: inset;
 	padding: 0 8px;
 	color: #a9b7c6;
+	background:#000000;
+	selection-background-color:#007b50;
+	selection-color: #FFFFFF;
+}
+QLineEdit:read-only {
+	border-width: 1px; border-radius: 4px;
+	border-color: rgb(58, 58, 58);
+	border-style: inset;
+	padding: 0 8px;
+	color: #6d635f;
 	background:#000000;
 	selection-background-color:#007b50;
 	selection-color: #FFFFFF;
@@ -153,7 +171,7 @@ QMenuBar::item:selected {
 	border-left-color: transparent;
 	border-bottom-color: #e67e22;
 	border-bottom-width: 1px;
-	border-bottom-radius: 6px;
+	border-radius: 6px;
 	border-style: solid;
 	color: #FFFFFF;
 	padding-bottom: 0px;
@@ -170,7 +188,7 @@ QMenu::item:selected {
 	padding-left:15px;
 	padding-top:4px;
 	padding-bottom:4px;
-	padding-right:7px;
+	padding-right:15px;
 	background-color:#000000;
 }
 QMenu::item {
@@ -185,7 +203,22 @@ QMenu::item {
 	padding-left:17px;
 	padding-top:4px;
 	padding-bottom:4px;
-	padding-right:7px;
+	padding-right:15px;
+	background-color:#000000;
+}
+QMenu::item:disabled {
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-bottom-width: 1px;
+	border-style: solid;
+	color: #808086;
+	padding-left:17px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-right:15px;
 	background-color:#000000;
 }
 QTabWidget {
@@ -317,6 +350,10 @@ QDateEdit {
 }
 QComboBox {
 	color: #a9b7c6;	
+	background: #1e1d23;
+}
+QComboBox:disabled {
+	color: #808086;	
 	background: #1e1d23;
 }
 QComboBox:editable {
@@ -573,4 +610,7 @@ QScrollBar::down-arrow:vertical {
 }
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
   	background: none;
+}
+QHexEdit {
+	background: none;
 }
